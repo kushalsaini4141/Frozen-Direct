@@ -1,0 +1,41 @@
+/* Login Page CSS (login.css) */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #BA1F33, #EFF9F0);
+}
+.auth-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.auth-box h2 {
+    margin-bottom: 20px;
+    color: #BA1F33;
+}
+.auth-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.auth-btn {
+    background: #BA1F33;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.auth-btn:hover {
+    background: #8E1626;
+}
+.switch a {
+    color: #BA1F33;
+}

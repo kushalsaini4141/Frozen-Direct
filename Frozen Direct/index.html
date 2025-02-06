@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROZEN DIRECT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.js">
+</head>
+<body>
+    <!--login and sign up -->
+    <div class="auth-section">
+        <div class="auth-container">
+            <div class="auth-links">
+                <button class="auth-btn login-btn"><a href="login.html">Login</a> </button>
+                <button class="auth-btn signup-btn"><a href="signup.html">Sign Up</a></button>
+            </div>
+        </div>
+    </div>
+    
+       <!--header section-->
+      <header>
+        <div class="navbaar">
+             <div class="nav-logo">
+                <div class="logo"></div>
+             </div>
+  
+             <div class="nav-search">
+               <input type="text" placeholder="Search for products..." class="search-box">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+             </div>
+
+             <div class="nav-menu">
+                 <div class="menu-lists">
+                  <a>Inventory</a>
+                  <a>Orders</a>
+                  <a>Delivery</a>
+                  <a>about us</a>
+                  <a>Cart</a>
+                
+                 </div>
+             </div>
+        </div>
+      </header>
+       <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-content">
+            <h1>Fresh, Frozen, and Delivered to Your Doorstep!</h1>
+            <p>Your one-stop solution for fresh and frozen essentials, delivered with care.</p>
+            <div class="hero-buttons">
+                <button class="cta-btn">Shop Now</button>
+                <button class="cta-btn secondary-btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="veg.jpeg" alt="Frozen Vegetables">
+                <h3>Frozen Vegetables</h3>
+                <p>$5.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="ready to eat.jpg" alt="Ready-to-Cook Meals">
+                <h3>Ready-to-Cook Meals</h3>
+                <p>$7.49</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="frozen deserts.jpeg" alt="Frozen Desserts">
+                <h3>Frozen Desserts</h3>
+                <p>$4.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="icee.webp" alt="Ice Cream">
+                <h3>Ice Cream</h3>
+                <p>$6.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+     
+
+           <!-- Real-Time Inventory Section -->
+           <section class="inventory-section">
+            <h2>Track Our Real-Time Inventory</h2>
+            <p>Always stay updated with what's available in stock.</p>
+            <div class="inventory-filters">
+                <button class="filter-btn active" onclick="filterItems('all')">All</button>
+                <button class="filter-btn" onclick="filterItems('available')">Available Now</button>
+                <button class="filter-btn" onclick="filterItems('outofstock')">Out of Stock</button>
+            </div>
+            <div class="inventory-container">
+                <div class="inventory-item available">
+                    <img src="frozen vegetable image.avif" alt="Frozen Vegetables" class="product-img">
+                    <h3>Frozen Vegetables</h3>
+                    <span class="status available">Available</span>
+                </div>
+                <div class="inventory-item outofstock">
+                    <img src="cook to meal.jpeg" alt="Ready-to-Cook Meals" class="product-img">
+                    <h3>Ready-to-Cook Meals</h3>
+                    <span class="status outofstock">Out of Stock</span>
+                </div>
+                <div class="inventory-item available">
+                    <img src="frozee desert.jpeg" alt="Frozen Desserts" class="product-img">
+                    <h3>Frozen Desserts</h3>
+                    <span class="status available">Available</span>
+                </div>
+                <div class="inventory-item outofstock">
+                    <img src="icess.jpg" alt="Ice Cream" class="product-img">
+                    <h3>Ice Cream</h3>
+                    <span class="status outofstock">Out of Stock</span>
+                </div>
+            </div>
+        </section>
+        
+        <!--delivery schedule section-->
+
+        <section class="delivery-section">
+            <div class="delivery-content">
+                <h2>Plan Your Perfect Delivery</h2>
+                <p>Customize your delivery slots and enjoy hassle-free, on-time deliveries at your convenience.</p>
+                <div class="delivery-steps">
+                    <div class="step">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Step 1: Choose a Date</h3>
+                        <p>Pick the most convenient day for your delivery.</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-clock"></i>
+                        <h3>Step 2: Select a Time Slot</h3>
+                        <p>Choose from our flexible morning, afternoon, or evening slots.</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-truck"></i>
+                        <h3>Step 3: Get It Delivered</h3>
+                        <p>Relax while we ensure your order reaches you on time!</p>
+                    </div>
+                </div>
+                <div class="delivery-benefits">
+                    <div class="benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <p>On-Time Delivery</p>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-user-clock"></i>
+                        <p>Customizable Slots</p>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-box"></i>
+                        <p>Safe & Secure Packaging</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    <!--about us section-->
+       
+    <section class="about-us-section">
+        <div class="about-content">
+            <div class="about-left">
+                <h2>Who We Are</h2>
+                <p>
+                    FrozenDirect is your trusted partner for fresh and frozen essentials, committed to delivering quality and convenience. Our mission is to transform how you shop for frozen foods, with care, sustainability, and reliability at our core.
+                </p>
+                <ul class="about-highlights">
+                    <li><i class="fas fa-snowflake"></i> Freshness Guaranteed</li>
+                    <li><i class="fas fa-truck"></i> Timely Deliveries</li>
+                    <li><i class="fas fa-heart"></i> Customer-Centric Approach</li>
+                </ul>
+                <button class="cta-btn">Learn More About Us</button>
+            </div>
+            <div class="about-right">
+                <div class="image-card">
+                    <img src="our team.webp" alt="Our Team">
+                    <p>Our Dedicated Team</p>
+                </div>
+                <div class="image-card">
+                    <img src="facility.jpeg" alt="Our Facility">
+                    <p>State-of-the-Art Facilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--footer section-->
+    <footer class="theme-footer">
+        <div class="footer-container">
+            <!-- About FrozenDirect -->
+            <div class="footer-column">
+                <h3>FrozenDirect</h3>
+                <p>Delivering fresh and frozen essentials with care and precision. Trusted by families for quality and convenience.</p>
+                <p>&copy; 2024 FrozenDirect. All rights reserved.</p>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+    
+            <!-- Customer Care -->
+            <div class="footer-column">
+                <h4>Customer Care</h4>
+                <ul class="footer-links">
+                    <li><a href="mailto:support@frozendirect.com">support@frozendirect.com</a></li>
+                    <li><a href="tel:+1234567890">121212121212</a></li>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media -->
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+     
+
+</body>
+</html>
